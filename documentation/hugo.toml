@@ -1,0 +1,22 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Example-Automation Documentation'
+
+[[module.imports]]
+path = "github.com/willfaught/paige"
+
+
+[languages.en]
+weight = 10
+
+[[languages.en.menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 10
+
+[[languages.en.menu.main]]
+identifier = "first-post"
+name = "First (and last) post"
+url = "/firstpost/"
+weight = 20
