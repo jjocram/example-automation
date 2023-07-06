@@ -14,10 +14,5 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v3
-      - name: Set application version
-        id: set_version
-        uses: kvendingoldo/semver-action@v1.15
-        with:
-          enable_github_releases: true
-          release_tag_prefix: "v"
-          github_token: "${{ secrets.GITHUB_TOKEN }}"
+      - name: Release
+        uses: huggingface/semver-release-action@latest
