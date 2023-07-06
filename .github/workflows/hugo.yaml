@@ -57,7 +57,7 @@ jobs:
           HUGO_ENV: production
         run: |
           hugo \
-            --s ./documentation
+            -s ./documentation
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
